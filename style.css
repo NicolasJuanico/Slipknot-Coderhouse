@@ -49,3 +49,7 @@ a {
 #members .card:hover {
     opacity: .5;
 } 
+
+.navbarBackground {
+    background-image: url("/resources/bandMembers/compress/d.jpg");
+}

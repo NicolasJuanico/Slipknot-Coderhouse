@@ -20,7 +20,7 @@
 <body>
     <!-- HEADER -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark navbarBackground">
             <a class="navbar-brand ml-3" href="https://slipknot1.com/" target="_blank">
                 <img src="/resources/logos/sk-logo-red.0a2db178.png" width="200px" alt="bandLogo">
             </a>
@@ -70,7 +70,7 @@
                         Not Your Kind".
                         Su carrera ha sido reconocida en varias ocasiones: son ganadores de un Premio Grammy,
                         además de
-                        haber sido nominados en 8 ocasiones más y también han sido nominados a los MTV Music Awards.
+                        haber sido nominados en 8 oportunidades más a dicho premio y a los MTV Music Awards.
                     </p>
                 </div>
             </div>
@@ -80,6 +80,13 @@
     <!-- Albums -->
     <section id="albums">
         <div class="album py-5 bg-black">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <h2>Albums</h2>
+                    </div>
+                </div>
+            </div>
             <div class="container">
                 <div class="row">
                     <div v-for="(album, index) in albums" class="col-md-4">
@@ -95,25 +102,25 @@
             </div>
         </div>
     </section>
-    
-    
+
+
     <!-- Members -->
     <section id="memberS">
-            <div class="album py-5 bg-black">
-                <div class="container">
-                    <div class="row">
-                        <div v-for="(member, index) in members" class="col-md-4">
-                            <div class="card mb-4 shadow-sm">
-                                <img v-bind:src="member[index].imagen" class="card-img-top" alt="albumImage">
-                                <div class="card-body bg-secondary text-center">
-                                    <h5 class="card-title">{{ member[index].name }}</h5>
-                                    <h5 class="card-release">{{ member[index].lastName }}</h5>
-                                </div>
+        <div class="album py-5 bg-black">
+            <div class="container">
+                <div class="row">
+                    <div v-for="(member, index) in members" class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img v-bind:src="member[index].imagen" class="card-img-top" alt="albumImage">
+                            <div class="card-body bg-secondary text-center">
+                                <h5 class="card-title">{{ member[index].name }}</h5>
+                                <h5 class="card-release">{{ member[index].lastName }}</h5>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
 
@@ -129,11 +136,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
+        
+        
+    <script src="main.js"></script>
     <!-- development version, includes helpful console warnings -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
-    <script src="main.js"></script>
 </body>
 
 </html>
