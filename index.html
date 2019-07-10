@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Slipknot</title>
+    <link rel="shortcut icon" href="resources/oficial img/favicon.png" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand ml-3" href="https://slipknot1.com/" target="_blank">
+                <img src="/resources/logos/sk-logo-red.0a2db178.png" width="200px" alt="bandLogo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleCollapse"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar Collapse -->
+            <div class="collapse navbar-collapse text-center" id="toggleCollapse">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#albums">Albums</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Integrantes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero">
+        <div class="container-fluid py-3">
+            <div class="card">
+                <img src="/resources/bandMembers/originals/a.jpg" class="card-img-top" alt="heroImage">
+                <div class="card-body bg-dark text-light">
+                    <h2 class="card-title text-center">Slipknot</h2>
+                    <p class="card-text">
+                        Se formó en Iowa en 1995, la formación actuales: Sid Wilson (teclado), Chris Fehn
+                        (percusión), Jim Root
+                        (guitarra),
+                        Craig Jones (sampler y teclados), Shawn Crahan (percusión), Mick Thomson (guitarra), Corey
+                        Taylor
+                        (voz), Alessandro Venturella (bajo) y Jay Weinberg (batería).
+                    </p>
+                    <p class="card-text">
+                        Lanzaron su primer álbum "Slipknot" en
+                        1999 y hasta ahora han publicado 6 discos, siendo el último publicado en 2019 bajo el título "We
+                        Are
+                        Not Your Kind".
+                        Su carrera ha sido reconocida en varias ocasiones: son ganadores de un Premio Grammy,
+                        además de
+                        haber sido nominados en 8 ocasiones más y también han sido nominados a los MTV Music Awards.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Albums -->
+    <section id="albums">
+        <div class="album py-5 bg-black">
+            <div class="container">
+                <div class="row">
+                    <div v-for="(album, index) in albums" class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img v-bind:src="albums[index].imagen" class="card-img-top" alt="albumImage">
+                            <div class="card-body bg-secondary text-center">
+                                <h5 class="card-title">{{ albums[index].title }}</h5>
+                                <h5 class="card-release">{{ albums[index].release }}</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Members -->
+    <section id="memberS">
+            <div class="album py-5 bg-black">
+                <div class="container">
+                    <div class="row">
+                        <div v-for="(member, index) in members" class="col-md-4">
+                            <div class="card mb-4 shadow-sm">
+                                <img v-bind:src="member[index].imagen" class="card-img-top" alt="albumImage">
+                                <div class="card-body bg-secondary text-center">
+                                    <h5 class="card-title">{{ member[index].name }}</h5>
+                                    <h5 class="card-release">{{ member[index].lastName }}</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
