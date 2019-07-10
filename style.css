@@ -9,7 +9,7 @@ body {
     background-color: black;
     color: white;
     font-family: 'Heavy', cursive;
-    background-image: url("resources/backgrounds/bg2.jpg");
+    background-image: url("/resources/backgrounds/bg2.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100vw;
