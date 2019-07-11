@@ -6,23 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Slipknot</title>
-    <link rel="shortcut icon" href="/resources/oficial img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/static/img/logos/favicon.png" type="image/x-icon">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Styles CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/static/scss/styles.css">
 
 </head>
 
 <body>
     <!-- HEADER -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark navbarBackground">
             <a class="navbar-brand ml-3" href="https://slipknot1.com/" target="_blank">
-                <img src="/resources/logos/sk-logo-red.0a2db178.png" width="200px" alt="bandLogo">
+                <img src="/static/img/logos/sk-logo-red.png" alt="bandLogo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleCollapse"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,10 +38,10 @@
                         <a class="nav-link" href="#albums">Albums</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Integrantes</a>
+                        <a class="nav-link" href="#members">Integrantes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -52,7 +52,7 @@
     <section id="hero">
         <div class="container-fluid py-3">
             <div class="card">
-                <img src="/resources/bandMembers/originals/a.jpg" class="card-img-top" alt="heroImage">
+                <img src="/static/img/backgrounds/bg2.jpg" width="100%" class="card-img-top" alt="heroImage">
                 <div class="card-body bg-dark text-light">
                     <h2 class="card-title text-center">Slipknot</h2>
                     <p class="card-text">
@@ -70,7 +70,7 @@
                         Not Your Kind".
                         Su carrera ha sido reconocida en varias ocasiones: son ganadores de un Premio Grammy,
                         además de
-                        haber sido nominados en 8 ocasiones más y también han sido nominados a los MTV Music Awards.
+                        haber sido nominados en 8 oportunidades más a dicho premio y a los MTV Music Awards.
                     </p>
                 </div>
             </div>
@@ -82,12 +82,64 @@
         <div class="album py-5 bg-black">
             <div class="container">
                 <div class="row">
-                    <div v-for="(album, index) in albums" class="col-md-4">
+                    <div class="col text-center">
+                        <h2>Albums</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
-                            <img v-bind:src="albums[index].imagen" class="card-img-top" alt="albumImage">
+                            <img src="/static/img/albumCover/1.jpg" class="card-img-top" alt="albumImage">
                             <div class="card-body bg-secondary text-center">
-                                <h5 class="card-title">{{ albums[index].title }}</h5>
-                                <h5 class="card-release">{{ albums[index].release }}</h5>
+                                <h5 class="card-title">Slipknot</h5>
+                                <h5 class="card-release">29 - Junio - 1999</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="/static/img/albumCover/2.jpg" class="card-img-top" alt="albumImage">
+                            <div class="card-body bg-secondary text-center">
+                                <h5 class="card-title">Iowa</h5>
+                                <h5 class="card-release">02 - Agosto - 2001</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="/static/img/albumCover/3.jpg" class="card-img-top" alt="albumImage">
+                            <div class="card-body bg-secondary text-center">
+                                <h5 class="card-title">Vol. 3: The Subliminal Verses</h5>
+                                <h5 class="card-release">21 - Mayo - 2004</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="/static/img/albumCover/4.jpg" class="card-img-top" alt="albumImage">
+                            <div class="card-body bg-secondary text-center">
+                                <h5 class="card-title">All Hope Is Gone</h5>
+                                <h5 class="card-release">20 - Agosto - 2008</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="/static/img/albumCover/5.jpg" class="card-img-top" alt="albumImage">
+                            <div class="card-body bg-secondary text-center">
+                                <h5 class="card-title">.5: The Gray Chapter</h5>
+                                <h5 class="card-release">21 - Octubre - 2014</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="/static/img/albumCover/6.jpg" class="card-img-top" alt="albumImage">
+                            <div class="card-body bg-secondary text-center">
+                                <h5 class="card-title">We Are Not Your Kind</h5>
+                                <h5 class="card-release">09 - Agosto - 2019</h5>
                             </div>
                         </div>
                     </div>
@@ -95,27 +147,180 @@
             </div>
         </div>
     </section>
-    
-    
+
+
     <!-- Members -->
-    <section id="memberS">
-            <div class="album py-5 bg-black">
-                <div class="container">
-                    <div class="row">
-                        <div v-for="(member, index) in members" class="col-md-4">
-                            <div class="card mb-4 shadow-sm">
-                                <img v-bind:src="member[index].imagen" class="card-img-top" alt="albumImage">
-                                <div class="card-body bg-secondary text-center">
-                                    <h5 class="card-title">{{ member[index].name }}</h5>
-                                    <h5 class="card-release">{{ member[index].lastName }}</h5>
-                                </div>
+    <section id="members">
+        <div class="album py-5 bg-black">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <h2>Integrantes</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="/static/img/bandMembers/squareFormat/b.jpg" class="card-img-top" alt="albumImage">
+                            <div class="card-body bg-secondary">
+                                <h5 class="card-title text-center">Alessandro Venturella</h5>
+                                <h5 class="card-info">
+                                    Se unió a Slipknot durante el proceso de grabación del álbum .5: The Gray Chapter,
+                                    reemplazando al fallecido bajista Paul Gray.
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="/static/img/bandMembers/squareFormat/c.jpg" class="card-img-top" alt="albumImage">
+                            <div class="card-body bg-secondary">
+                                <h5 class="card-title text-center">Corey Taylor</h5>
+                                <h5 class="card-info">
+                                    Se unió a Slipknot en 1997 para reemplazar a su vocalista original Anders Colsefni.
+                                    Ha publicado 5 álbumes de estudio
+                                    con la banda.
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="/static/img/bandMembers/squareFormat/h.jpg" class="card-img-top" alt="albumImage">
+                            <div class="card-body bg-secondary">
+                                <h5 class="card-title text-center">Chris Fehn</h5>
+                                <h5 class="card-info">
+                                    Se unió a la banda, reemplazando al percusionista
+                                    Brandon Darner.
+                                    Fue parte de varios coros en las funciones en vivo.
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="/static/img/bandMembers/squareFormat/f.jpg" class="card-img-top" alt="albumImage">
+                            <div class="card-body bg-secondary">
+                                <h5 class="card-title text-center">Craig Jones</h5>
+                                <h5 class="card-info">
+                                    Usa una mascara con 133 clavos que son grandes, una cremallera
+                                    muy grande en la boca,
+                                    pequeñas hendiduras para los ojos y dos pequeños orificios en la nariz.
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="/static/img/bandMembers/squareFormat/e.jpg" class="card-img-top" alt="albumImage">
+                            <div class="card-body bg-secondary">
+                                <h5 class="card-title text-center">Jay Weinberg</h5>
+                                <h5 class="card-info">
+                                    Se convirtió en el baterista de Slipknot tras la marcha de Joey Jordison a finales
+                                    de 2013.
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="/static/img/bandMembers/squareFormat/l.jpg" class="card-img-top" alt="albumImage">
+                            <div class="card-body bg-secondary">
+                                <h5 class="card-title text-center">Jim Root</h5>
+                                <h5 class="card-info">
+                                    Las revistas Guitar World, Kerrang, Revolver y Rolling Stone le otorgaron en el 2008
+                                    el título de
+                                    'Guitarrista del año' por el buen trabajo realizado en el álbum 'All Hope Is Gone'.
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="/static/img/bandMembers/squareFormat/o.jpg" class="card-img-top" alt="albumImage">
+                            <div class="card-body bg-secondary">
+                                <h5 class="card-title text-center">Mick Thomson</h5>
+                                <h5 class="card-info">
+                                    Tiene una fascinación por los asesinos en serie.
+                                    No se considera una persona violenta por naturaleza.
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="/static/img/bandMembers/squareFormat/d.jpg" class="card-img-top" alt="albumImage">
+                            <div class="card-body bg-secondary">
+                                <h5 class="card-title text-center">Shawn Crahan</h5>
+                                <h5 class="card-info">
+                                    Es uno de los percusionistas y corista de la banda, ademas de ser fundador de la
+                                    misma. Durante los conciertos es uno de los más activos y se ha
+                                    fracturado varias partes del cuerpo.
+                                    Es denominado por la banda y los fans como 'Clown' o 'Numero 6'.
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="/static/img/bandMembers/squareFormat/r.jpg" class="card-img-top" alt="albumImage">
+                            <div class="card-body bg-secondary">
+                                <h5 class="card-title text-center">Sid Wilson</h5>
+                                <h5 class="card-info">
+                                    Durante los conciertos es muy activo y muchas veces salta desde el escenario hasta
+                                    el público.
+                                    Además siempre es visto peleando en el escenario con Shawn Crahan,
+                                    además de prenderse
+                                    fuego el mismo en algunas presentaciones.
+                                </h5>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
+    <!-- Video -->
+    <section id="video">
+        <div class="container text-center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VpATBBRajP8" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+        <div class="container my-5">
+            <form>
+                <div class="row">
+                    <div class="col">
+                        <label for="nombreInput">Nombre</label>
+                        <input type="text" class="form-control" placeholder="Nombre" required>
+                    </div>
+                    <div class="col">
+                        <label for="apellidoInput">Apellido</label>
+                        <input type="text" class="form-control" placeholder="Apellido" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="emailInput">Email address</label>
+                    <input type="email" class="form-control" id="emailInput" placeholder="email@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="textarea">Ingrese un mensaje</label>
+                    <textarea class="form-control" id="Textarea" rows="3"></textarea>
+                </div>
+                <div class="d-flex btn-group btn-group-lg justify-content-center" role="group">
+                    <button type="submit" class="btn btn-secondary">Enviar</button>
+                    <button type="reset" class="btn btn-secondary">Limpiar</button>
+                </div>
+            </form>
+        </div>
+    </section>
 
 
     <!-- Optional JavaScript -->
@@ -130,10 +335,6 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-    <!-- development version, includes helpful console warnings -->
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
-    <script src="main.js"></script>
 </body>
 
 </html>
