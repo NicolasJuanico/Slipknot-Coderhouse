@@ -36,19 +36,25 @@ header button img {
   width: 50px;
 }
 
-#hero img {
+#hero .hero-mobile .jumbotron {
+  background-image: url("/static/img/backgrounds/bg1.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+
+#hero .hero-desk img {
   width: 100%;
 }
 
-#hero .card {
+#hero .hero-desk .card {
   border: none;
 }
 
-#hero .card h2 {
+#hero .hero-desk .card h2 {
   font-size: 3em;
 }
 
-#hero .card .card-text {
+#hero .hero-desk .card .card-text {
   padding: 10px 0;
 }
 
@@ -80,6 +86,10 @@ header button img {
   background: #020024;
   background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(35%, #090979), to(100%));
   background: linear-gradient(90deg, #020024 0%, #090979 35%, 100%);
+}
+
+#albums h2, #members h2 {
+  font-size: 5em;
 }
 
 .socialMedia {
