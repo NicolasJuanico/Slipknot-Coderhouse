@@ -9,47 +9,75 @@ body {
     background-color: black;
     color: white;
     font-family: 'Heavy', Arial, Helvetica, sans-serif;
-    background-image: url("/resources/backgrounds/bg2.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100vw;
+}
+
+header {
+    width: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, 100%);
+    display: flex;
+    justify-content: center;
+    img {
+        width: 200px;
+    }
+    a {
+        font-size: 25px;
+    }
+    button {
+        img {
+            width: 50px;
+        }
+    }
+}
+
+#hero {
+    img {
+        width: 100%;
+    }
+    .card {
+        border: none;
+        h2 {
+            font-size: 3em;
+        }
+        .card-text {
+            padding: 10px 0;
+        }
+    }
+}
+
+#albums {
+    background-image: url("/static/img/bandMembers/21.jpg");
     background-attachment: fixed;
-}
-
-a {
-    font-size: 35px;
-}
-
-.navbar-toggler-icon {
-    background-image: url("/resources/logos/sk-star-red.e44cfb8a.png") !important;
-}
-
-#albums .album {
-    background-image: url("/resources/bandMembers/compress/c.jpg");
-    background-repeat: no-repeat;
     background-position: center;
-    background-size: auto;
-    background-attachment: fixed;
-}
-
-#albums .card:hover {
-    opacity: .5;
-}
-
-
-
-#members .album {
-    background-image: url("/resources/bandMembers/compress/d.jpg");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto;
-    background-attachment: fixed;
+    background-size: cover;
+    .card:hover {
+        opacity: 0.5;
+    }
 }
 
-#members .card:hover {
-    opacity: .5;
-} 
+#members {
+    background-image: url("/static/img/backgrounds/bg1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .card:hover {
+        opacity: 0.5;
+    }
+}
 
-.navbarBackground {
-    background-image: url("/resources/bandMembers/compress/d.jpg");
+#video, #contacto, body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, 100%);
+}
+
+.socialMedia {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    a img {
+        width: calc(100%/5);
+    }
 }
