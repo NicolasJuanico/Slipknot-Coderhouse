@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Heavy';
+  src: url("/static/typography/Industry-Book.woff2") format("woff2");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  font-family: 'Heavy', Arial, Helvetica, sans-serif;
+  background-image: url("/resources/backgrounds/bg2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100vw;
+  background-attachment: fixed;
+}
+
+a {
+  font-size: 35px;
+}
+
+.navbar-toggler-icon {
+  background-image: url("/resources/logos/sk-star-red.e44cfb8a.png") !important;
+}
+
+#albums .album {
+  background-image: url("/resources/bandMembers/compress/c.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  background-attachment: fixed;
+}
+
+#albums .card:hover {
+  opacity: .5;
+}
+
+#members .album {
+  background-image: url("/resources/bandMembers/compress/d.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  background-attachment: fixed;
+}
+
+#members .card:hover {
+  opacity: .5;
+}
+
+.navbarBackground {
+  background-image: url("/resources/bandMembers/compress/d.jpg");
+}
+/*# sourceMappingURL=styles.css.map */
