@@ -96,5 +96,6 @@ header button img {
 
 .socialMedia a img {
   width: calc(100%/5);
+  min-width: 50px;
 }
 /*# sourceMappingURL=styles.css.map */
