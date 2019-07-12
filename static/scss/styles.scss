@@ -32,21 +32,24 @@ header {
 
 #hero {
     .hero-mobile .jumbotron {   
-        background-image: url("/static/img/backgrounds/bg1.jpg");
         background-size: cover;  
         background-position: bottom;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/static/img/backgrounds/bg1.jpg");
     }
     .hero-desk {
-        img {
-            width: 100%;
-        }
         .card {
             border: none;
-            h2 {
-                font-size: 3em;
-            }
-            .card-text {
-                padding: 10px 0;
+            .card-body {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/static/img/backgrounds/bg0.jpg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                h2 {
+                    font-size: 3em;
+                }
+                .card-text {
+                    padding: 10px 0;
+                }
             }
         }
     }
@@ -54,23 +57,24 @@ header {
 
 #albums {
     background-image: url("/static/img/bandMembers/21.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/static/img/bandMembers/21.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     .card:hover {
-        opacity: 0.5;
+        opacity: 0.7;
     }
 }
 
 #members {
-    background-image: url("/static/img/backgrounds/bg1.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/static/img/backgrounds/bg1.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     .card:hover {
-        opacity: 0.5;
+        opacity: 0.7;
     }
 }
 
@@ -81,7 +85,7 @@ header {
 
 #albums, #members {
     h2 {
-    font-size: 5em;
+        font-size: 5em;
     }
 }
 

@@ -37,29 +37,36 @@ header button img {
 }
 
 #hero .hero-mobile .jumbotron {
-  background-image: url("/static/img/backgrounds/bg1.jpg");
   background-size: cover;
   background-position: bottom;
-}
-
-#hero .hero-desk img {
-  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("/static/img/backgrounds/bg1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/static/img/backgrounds/bg1.jpg");
 }
 
 #hero .hero-desk .card {
   border: none;
 }
 
-#hero .hero-desk .card h2 {
+#hero .hero-desk .card .card-body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("/static/img/backgrounds/bg0.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/static/img/backgrounds/bg0.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#hero .hero-desk .card .card-body h2 {
   font-size: 3em;
 }
 
-#hero .hero-desk .card .card-text {
+#hero .hero-desk .card .card-body .card-text {
   padding: 10px 0;
 }
 
 #albums {
   background-image: url("/static/img/bandMembers/21.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url("/static/img/bandMembers/21.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/static/img/bandMembers/21.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -67,11 +74,12 @@ header button img {
 }
 
 #albums .card:hover {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 #members {
-  background-image: url("/static/img/backgrounds/bg1.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url("/static/img/backgrounds/bg1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/static/img/backgrounds/bg1.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -79,7 +87,7 @@ header button img {
 }
 
 #members .card:hover {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 #video, #contacto, body {
