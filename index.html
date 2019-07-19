@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Slipknot</title>
-    <link rel="shortcut icon" href="/static/img/logos/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/static/img/favicon.png" type="image/x-icon">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -23,11 +23,10 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark navbarBackground">
                 <a class="navbar-brand ml-3" href="https://slipknot1.com/" target="_blank">
-                    <img src="/static/img/logos/sk-logo-red.png" alt="bandLogo">
+                    <img src="/static/img/sk-logo-red.png" alt="bandLogo">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleCollapse"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <img src="/static/img/logos/sk-star-red.png" alt="navbarIcon">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleCollapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <img  src="/static/img/sk-star-red.png" alt="navbarIcon">
                 </button>
                 <!-- Navbar Collapse -->
                 <div class="collapse navbar-collapse text-center" id="toggleCollapse">
@@ -52,10 +51,31 @@
 
     <!-- Hero -->
     <section id="hero">
-        <div class="hero-mobile d-lg-none">
-            <div class="jumbotron jumbotron-fluid">
-                <div class="container">
-                    <h1 class="display-4">Slipknot</h1>
+        <div class="jumbotron jumbotron-fluid d-lg-none">
+            <div class="container">
+                <h1>Slipknot</h1>
+                <p class="lead">
+                    Se formó en Iowa en 1995, la formación actuales: Sid Wilson (teclado), Chris Fehn
+                    (percusión), Jim Root
+                    (guitarra),
+                    Craig Jones (sampler y teclados), Shawn Crahan (percusión), Mick Thomson (guitarra), Corey
+                    Taylor
+                    (voz), Alessandro Venturella (bajo) y Jay Weinberg (batería).
+                    <br>
+                    Lanzaron su primer álbum "Slipknot" en
+                    1999 y hasta ahora han publicado 6 discos, siendo el último publicado en 2019 bajo el título "We
+                    Are
+                    Not Your Kind".
+                    Su carrera ha sido reconocida en varias ocasiones: son ganadores de un Premio Grammy,
+                    además de
+                    haber sido nominados en 8 oportunidades más a dicho premio y a los MTV Music Awards.
+                </p>
+            </div>
+        </div>
+        <div class="container d-none d-lg-block">
+            <div class="row">
+                <div class="col">
+                    <h1>Slipknot</h1>
                     <p class="lead">
                         Se formó en Iowa en 1995, la formación actuales: Sid Wilson (teclado), Chris Fehn
                         (percusión), Jim Root
@@ -73,32 +93,8 @@
                         haber sido nominados en 8 oportunidades más a dicho premio y a los MTV Music Awards.
                     </p>
                 </div>
-            </div>
-        </div>
-        <div class="hero-desk d-none d-lg-block">
-            <div class="container-fluid py-3">
-                <div class="card">
-                    <div class="card-body bg-dark text-light">
-                        <h2 class="card-title text-center my-2">Slipknot</h2>
-                        <p class="card-text">
-                            Se formó en Iowa en 1995, la formación actuales: Sid Wilson (teclado), Chris Fehn
-                            (percusión), Jim Root
-                            (guitarra),
-                            Craig Jones (sampler y teclados), Shawn Crahan (percusión), Mick Thomson (guitarra), Corey
-                            Taylor
-                            (voz), Alessandro Venturella (bajo) y Jay Weinberg (batería).
-                        </p>
-                        <p class="card-text">
-                            Lanzaron su primer álbum "Slipknot" en
-                            1999 y hasta ahora han publicado 6 discos, siendo el último publicado en 2019 bajo el título
-                            "We
-                            Are
-                            Not Your Kind".
-                            Su carrera ha sido reconocida en varias ocasiones: son ganadores de un Premio Grammy,
-                            además de
-                            haber sido nominados en 8 oportunidades más a dicho premio y a los MTV Music Awards.
-                        </p>
-                    </div>
+                <div class="col">
+                    <img class="img-fluid" src="/static/img/bg3.jpg" alt="hero image">
                 </div>
             </div>
         </div>
@@ -108,30 +104,28 @@
     <section id="albums">
         <!-- mobile -->
         <div class="d-md-none">
-            <div class="container py-5">
-                <div class="container text-center py-5">
-                    <h2>Albums</h2>
-                </div>
+            <div class="container text-center py-5">
+                <h2>Albums</h2>
             </div>
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="/static/img/albumCover/1.jpg" class="d-block w-100" alt="...">
+                        <img src="/static/img/1.jpg" class="d-block w-100" alt="album image">
                     </div>
                     <div class="carousel-item">
-                        <img src="/static/img/albumCover/2.jpg" class="d-block w-100" alt="...">
+                        <img src="/static/img/2.jpg" class="d-block w-100" alt="album image">
                     </div>
                     <div class="carousel-item">
-                        <img src="/static/img/albumCover/3.jpg" class="d-block w-100" alt="...">
+                        <img src="/static/img/3.jpg" class="d-block w-100" alt="album image">
                     </div>
                     <div class="carousel-item">
-                        <img src="/static/img/albumCover/4.jpg" class="d-block w-100" alt="...">
+                        <img src="/static/img/4.jpg" class="d-block w-100" alt="album image">
                     </div>
                     <div class="carousel-item">
-                        <img src="/static/img/albumCover/5.jpg" class="d-block w-100" alt="...">
+                        <img src="/static/img/5.jpg" class="d-block w-100" alt="album image">
                     </div>
                     <div class="carousel-item">
-                        <img src="/static/img/albumCover/6.jpg" class="d-block w-100" alt="...">
+                        <img src="/static/img/6.jpg" class="d-block w-100" alt="album image">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -155,7 +149,7 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="card mb-4 shadow-sm">
-                                <img src="/static/img/albumCover/1.jpg" class="card-img-top" alt="albumImage">
+                                <img src="/static/img/1.jpg" class="card-img-top" alt="albumImage">
                                 <div class="card-body bg-secondary text-center">
                                     <h5 class="card-title">Slipknot</h5>
                                     <h5 class="card-release">29 - Junio - 1999</h5>
@@ -164,7 +158,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="card mb-4 shadow-sm">
-                                <img src="/static/img/albumCover/2.jpg" class="card-img-top" alt="albumImage">
+                                <img src="/static/img/2.jpg" class="card-img-top" alt="albumImage">
                                 <div class="card-body bg-secondary text-center">
                                     <h5 class="card-title">Iowa</h5>
                                     <h5 class="card-release">02 - Agosto - 2001</h5>
@@ -173,7 +167,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="card mb-4 shadow-sm">
-                                <img src="/static/img/albumCover/3.jpg" class="card-img-top" alt="albumImage">
+                                <img src="/static/img/3.jpg" class="card-img-top" alt="albumImage">
                                 <div class="card-body bg-secondary text-center">
                                     <h5 class="card-title">Vol. 3: The Subliminal Verses</h5>
                                     <h5 class="card-release">21 - Mayo - 2004</h5>
@@ -182,7 +176,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="card mb-4 shadow-sm">
-                                <img src="/static/img/albumCover/4.jpg" class="card-img-top" alt="albumImage">
+                                <img src="/static/img/4.jpg" class="card-img-top" alt="albumImage">
                                 <div class="card-body bg-secondary text-center">
                                     <h5 class="card-title">All Hope Is Gone</h5>
                                     <h5 class="card-release">20 - Agosto - 2008</h5>
@@ -191,7 +185,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="card mb-4 shadow-sm">
-                                <img src="/static/img/albumCover/5.jpg" class="card-img-top" alt="albumImage">
+                                <img src="/static/img/5.jpg" class="card-img-top" alt="albumImage">
                                 <div class="card-body bg-secondary text-center">
                                     <h5 class="card-title">.5: The Gray Chapter</h5>
                                     <h5 class="card-release">21 - Octubre - 2014</h5>
@@ -200,7 +194,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="card mb-4 shadow-sm">
-                                <img src="/static/img/albumCover/6.jpg" class="card-img-top" alt="albumImage">
+                                <img src="/static/img/6.jpg" class="card-img-top" alt="albumImage">
                                 <div class="card-body bg-secondary text-center">
                                     <h5 class="card-title">We Are Not Your Kind</h5>
                                     <h5 class="card-release">09 - Agosto - 2019</h5>
@@ -224,118 +218,73 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
-                            <img src="/static/img/bandMembers/squareFormat/b.jpg" class="card-img-top" alt="albumImage">
+                            <img src="/static/img/a.jpg" class="card-img-top" alt="albumImage">
                             <div class="card-body bg-secondary">
                                 <h5 class="card-title text-center">Alessandro Venturella</h5>
-                                <h5 class="card-info">
-                                    Se unió a Slipknot durante el proceso de grabación del álbum .5: The Gray Chapter,
-                                    reemplazando al fallecido bajista Paul Gray.
-                                </h5>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
-                            <img src="/static/img/bandMembers/squareFormat/c.jpg" class="card-img-top" alt="albumImage">
+                            <img src="/static/img/b.jpg" class="card-img-top" alt="albumImage">
                             <div class="card-body bg-secondary">
                                 <h5 class="card-title text-center">Corey Taylor</h5>
-                                <h5 class="card-info">
-                                    Se unió a Slipknot en 1997 para reemplazar a su vocalista original Anders Colsefni.
-                                    Ha publicado 5 álbumes de estudio
-                                    con la banda.
-                                </h5>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
-                            <img src="/static/img/bandMembers/squareFormat/h.jpg" class="card-img-top" alt="albumImage">
-                            <div class="card-body bg-secondary">
-                                <h5 class="card-title text-center">Chris Fehn</h5>
-                                <h5 class="card-info">
-                                    Se unió a la banda, reemplazando al percusionista
-                                    Brandon Darner.
-                                    Fue parte de varios coros en las funciones en vivo.
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            <img src="/static/img/bandMembers/squareFormat/f.jpg" class="card-img-top" alt="albumImage">
-                            <div class="card-body bg-secondary">
-                                <h5 class="card-title text-center">Craig Jones</h5>
-                                <h5 class="card-info">
-                                    Usa una mascara con 133 clavos que son grandes, una cremallera
-                                    muy grande en la boca,
-                                    pequeñas hendiduras para los ojos y dos pequeños orificios en la nariz.
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            <img src="/static/img/bandMembers/squareFormat/e.jpg" class="card-img-top" alt="albumImage">
-                            <div class="card-body bg-secondary">
-                                <h5 class="card-title text-center">Jay Weinberg</h5>
-                                <h5 class="card-info">
-                                    Se convirtió en el baterista de Slipknot tras la marcha de Joey Jordison a finales
-                                    de 2013.
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            <img src="/static/img/bandMembers/squareFormat/l.jpg" class="card-img-top" alt="albumImage">
-                            <div class="card-body bg-secondary">
-                                <h5 class="card-title text-center">Jim Root</h5>
-                                <h5 class="card-info">
-                                    Las revistas Guitar World, Kerrang, Revolver y Rolling Stone le otorgaron en el 2008
-                                    el título de
-                                    'Guitarrista del año' por el buen trabajo realizado en el álbum 'All Hope Is Gone'.
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            <img src="/static/img/bandMembers/squareFormat/o.jpg" class="card-img-top" alt="albumImage">
-                            <div class="card-body bg-secondary">
-                                <h5 class="card-title text-center">Mick Thomson</h5>
-                                <h5 class="card-info">
-                                    Tiene una fascinación por los asesinos en serie.
-                                    No se considera una persona violenta por naturaleza.
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            <img src="/static/img/bandMembers/squareFormat/d.jpg" class="card-img-top" alt="albumImage">
+                            <img src="/static/img/c.jpg" class="card-img-top" alt="albumImage">
                             <div class="card-body bg-secondary">
                                 <h5 class="card-title text-center">Shawn Crahan</h5>
-                                <h5 class="card-info">
-                                    Es uno de los percusionistas y corista de la banda, ademas de ser fundador de la
-                                    misma. Durante los conciertos es uno de los más activos y se ha
-                                    fracturado varias partes del cuerpo.
-                                    Es denominado por la banda y los fans como 'Clown' o 'Numero 6'.
-                                </h5>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
-                            <img src="/static/img/bandMembers/squareFormat/r.jpg" class="card-img-top" alt="albumImage">
+                            <img src="/static/img/d.jpg" class="card-img-top" alt="albumImage">
+                            <div class="card-body bg-secondary">
+                                <h5 class="card-title text-center">Jay Weinberg</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="/static/img/e.jpg" class="card-img-top" alt="albumImage">
+                            <div class="card-body bg-secondary">
+                                <h5 class="card-title text-center">Craig Jones</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="/static/img/f.jpg" class="card-img-top" alt="albumImage">
+                            <div class="card-body bg-secondary">
+                                <h5 class="card-title text-center">Chris Fehn</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="/static/img/g.jpg" class="card-img-top" alt="albumImage">
+                            <div class="card-body bg-secondary">
+                                <h5 class="card-title text-center">Jim Root</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="/static/img/h.jpg" class="card-img-top" alt="albumImage">
+                            <div class="card-body bg-secondary">
+                                <h5 class="card-title text-center">Mick Thomson</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="/static/img/i.jpg" class="card-img-top" alt="albumImage">
                             <div class="card-body bg-secondary">
                                 <h5 class="card-title text-center">Sid Wilson</h5>
-                                <h5 class="card-info">
-                                    Durante los conciertos es muy activo y muchas veces salta desde el escenario hasta
-                                    el público.
-                                    Además siempre es visto peleando en el escenario con Shawn Crahan,
-                                    además de prenderse
-                                    fuego el mismo en algunas presentaciones.
-                                </h5>
                             </div>
                         </div>
                     </div>
@@ -376,30 +325,30 @@
                     <textarea class="form-control" id="Textarea" rows="3"></textarea>
                 </div>
                 <div class="d-flex btn-group btn-group-lg justify-content-center" role="group">
-                    <button type="submit" class="btn btn-secondary">Enviar</button>
-                    <button type="reset" class="btn btn-secondary">Limpiar</button>
+                    <button type="submit" class="btn btn-success">Enviar</button>
+                    <button type="reset" class="btn btn-danger">Limpiar</button>
                 </div>
             </form>
         </div>
     </section>
 
     <footer>
-        <div class="container my-5 text-center">
+        <div class="container text-center">
             <div class="socialMedia">
                 <a href="https://www.facebook.com/slipknot/" target="_blank">
-                    <img src="/static/img/socialMedia/facebook.png" alt="facebook">
+                    <img src="/static/img/facebook.png" alt="facebook">
                 </a>
                 <a href="https://www.instagram.com/slipknot/" target="_blank">
-                    <img src="/static/img/socialMedia/instagram.png" alt="instagram">
+                    <img src="/static/img/instagram.png" alt="instagram">
                 </a>
                 <a href="https://open.spotify.com/user/slipknotofficial" target="_blank">
-                    <img src="/static/img/socialMedia/spotify.png" alt="spotify">
+                    <img src="/static/img/spotify.png" alt="spotify">
                 </a>
                 <a href="https://twitter.com/slipknot" target="_blank">
-                    <img src="/static/img/socialMedia/twitter.png" alt="twitter">
+                    <img src="/static/img/twitter.png" alt="twitter">
                 </a>
                 <a href="https://www.youtube.com/channel/UCOJZ1tna8yj8mAEITPkHNCQ" target="_blank">
-                    <img src="/static/img/socialMedia/youtube.png" alt="youtube">
+                    <img src="/static/img/youtube.png" alt="youtube">
                 </a>
             </div>
         </div>
@@ -408,6 +357,10 @@
                     target="_blank">Nicolas Juanico</a> para el curso de <a
                     href="https://www.coderhouse.com/buenos-aires/cursos/disenador-web" target="_blank">Diseño Web en
                     Coderhouse</a>.</p>
+            <p>
+                El repositorio de la pagina se encuentra en <a
+                    href="https://github.com/NicolasJuanico/Slipknot-Coderhouse" target="_blank">Github</a>
+            </p>
         </div>
     </footer>
 

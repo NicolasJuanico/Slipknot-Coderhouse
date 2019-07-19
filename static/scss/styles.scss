@@ -6,87 +6,84 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: black;
     color: white;
     font-family: 'Heavy', Arial, Helvetica, sans-serif;
 }
 
-header {
-    width: 100%;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, 100%);
-    display: flex;
-    justify-content: center;
-    img {
-        width: 200px;
-    }
-    a {
-        font-size: 25px;
-    }
-    button {
-        img {
-            width: 50px;
-        }
-    }
-}
+$breakpoint-tablet: 768px;
+$breakpoint-pc: 769px;
 
-#hero {
-    .hero-mobile .jumbotron {   
-        background-size: cover;  
-        background-position: bottom;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/static/img/backgrounds/bg1.jpg");
-    }
-    .hero-desk {
-        .card {
-            border: none;
-            .card-body {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/static/img/backgrounds/bg0.jpg");
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-                h2 {
-                    font-size: 3em;
-                }
-                .card-text {
-                    padding: 10px 0;
-                }
+@media (max-width: $breakpoint-tablet) {
+    header {
+        width: 100%;
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, 100%);
+        display: flex;
+        justify-content: center;
+        img {
+            width: 100px;
+        }
+        a {
+            font-size: 1.2em;
+        }
+        button {
+            img {
+                width: 35px;
             }
         }
     }
-}
-
-#albums {
-    background-image: url("/static/img/bandMembers/21.jpg");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/static/img/bandMembers/21.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    .card:hover {
-        opacity: 0.7;
+    h1 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    #hero {
+        .jumbotron {   
+            background-size: cover;  
+            background-repeat: no-repeat;  
+            background-position: center;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("/static/img/bg2.jpg");
+        }
     }
 }
 
-#members {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/static/img/backgrounds/bg1.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    .card:hover {
-        opacity: 0.7;
+@media (min-width: $breakpoint-pc) {
+    header {
+        width: 100%;
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,.5) 0%, rgba(9,9,121,.6) 35%, 100%);
+        img {
+            width: 250px;
+        }
+        a {
+            font-size: 25px;
+        }
+        button {
+            img {
+                width: 50px;
+            }
+        }
+    }
+    #hero {
+        .jumbotron {   
+            background-size: cover;  
+            background-repeat: no-repeat;  
+            background-position: center;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("/static/img/bg2.jpg");
+        }
+        img {
+            height: auto;
+        }
+    }
+    #albums {
+        background: rgb(255,46,0);
+        background: linear-gradient(90deg, rgba(255,46,0,1) 0%, rgba(5,0,0,1) 6%, rgba(0,0,0,1) 95%, rgba(245,0,0,1) 100%);
     }
 }
+
 
 #video, #contacto, body {
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, 100%);
-}
-
-#albums, #members {
-    h2 {
-        font-size: 5em;
-    }
 }
 
 .socialMedia {
@@ -96,6 +93,10 @@ header {
     width: 100%;
     a img {
         width: calc(100%/5);
-        min-width: 50px;
+        width: 10px;
     }
+}
+
+a:hover {
+    text-decoration: underline;
 }
