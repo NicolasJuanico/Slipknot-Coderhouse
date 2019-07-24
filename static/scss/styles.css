@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Heavy';
+  font-family: "Heavy";
   src: url("/static/typography/Industry-Book.woff2") format("woff2");
 }
 
@@ -7,24 +7,20 @@ body {
   margin: 0;
   padding: 0;
   color: white;
-  font-family: 'Heavy', Arial, Helvetica, sans-serif;
+  background: #020024;
+  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(35%, #090979), to(100%));
+  background: linear-gradient(90deg, #020024 0%, #090979 35%, 100%);
+  font-family: "Heavy", Arial, Helvetica, sans-serif;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 320px) {
   header {
-    width: 100%;
     background: #020024;
     background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(35%, #090979), to(100%));
     background: linear-gradient(90deg, #020024 0%, #090979 35%, 100%);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   header img {
-    width: 100px;
+    width: 125px;
   }
   header a {
     font-size: 1.2em;
@@ -34,23 +30,64 @@ body {
   }
   h1 {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 1em;
   }
-  #hero .jumbotron {
+  p {
+    padding: 0;
+    margin: 0;
+  }
+  .jumbotron {
+    padding: 1rem;
+    margin-bottom: 0;
+    border-radius: 0;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.9))), url("/static/img/bg2.jpg");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("/static/img/bg2.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.9))), url("/static/img/bg1.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("/static/img/bg1.jpg");
+  }
+  #albums .card-body {
+    background: #020024;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(25%, #020024), color-stop(47%, #130021), color-stop(74%, #3e001b), to(#b0000b));
+    background: linear-gradient(0deg, #020024 25%, #130021 47%, #3e001b 74%, #b0000b 100%);
+  }
+  #members .card-body {
+    background: #020024;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, #020024), color-stop(47%, #130021), color-stop(74%, #3e001b), to(#b0000b));
+    background: linear-gradient(180deg, #020024 25%, #130021 47%, #3e001b 74%, #b0000b 100%);
+  }
+  footer {
+    background: #020024;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, #020024), color-stop(47%, #130021), color-stop(74%, #3e001b), to(#b0000b));
+    background: linear-gradient(180deg, #020024 25%, #130021 47%, #3e001b 74%, #b0000b 100%);
+    margin-top: 100px;
+  }
+  footer .container {
+    padding-bottom: 20px;
+  }
+  footer .socialMedia {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .socialMedia img {
+    width: 35px;
   }
 }
 
 @media (min-width: 769px) {
   header {
-    width: 100%;
     background: #020024;
     background: -webkit-gradient(linear, left top, right top, from(rgba(2, 0, 36, 0.5)), color-stop(35%, rgba(9, 9, 121, 0.6)), to(100%));
     background: linear-gradient(90deg, rgba(2, 0, 36, 0.5) 0%, rgba(9, 9, 121, 0.6) 35%, 100%);
+  }
+  header .navbar-nav {
+    right: 0;
   }
   header img {
     width: 250px;
@@ -61,47 +98,5 @@ body {
   header button img {
     width: 50px;
   }
-  #hero .jumbotron {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.7))), url("/static/img/bg2.jpg");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("/static/img/bg2.jpg");
-  }
-  #hero img {
-    height: auto;
-  }
-  #albums {
-    background: #ff2e00;
-    background: -webkit-gradient(linear, left top, right top, from(#ff2e00), color-stop(6%, #050000), color-stop(95%, black), to(#f50000));
-    background: linear-gradient(90deg, #ff2e00 0%, #050000 6%, black 95%, #f50000 100%);
-  }
-}
-
-#video, #contacto, body {
-  background: #020024;
-  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(35%, #090979), to(100%));
-  background: linear-gradient(90deg, #020024 0%, #090979 35%, 100%);
-}
-
-.socialMedia {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  width: 100%;
-}
-
-.socialMedia a img {
-  width: calc(100%/5);
-  width: 10px;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 /*# sourceMappingURL=styles.css.map */

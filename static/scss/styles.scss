@@ -1,102 +1,144 @@
 @font-face {
-    font-family: 'Heavy';
-    src: url('/static/typography/Industry-Book.woff2') format('woff2');
+  font-family: "Heavy";
+  src: url("/static/typography/Industry-Book.woff2") format("woff2");
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    color: white;
-    font-family: 'Heavy', Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, 100%);
+  font-family: "Heavy", Arial, Helvetica, sans-serif;
 }
 
-$breakpoint-tablet: 768px;
+$breakpoint-cel: 320px;
 $breakpoint-pc: 769px;
 
-@media (max-width: $breakpoint-tablet) {
-    header {
-        width: 100%;
-        background: rgb(2,0,36);
-        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, 100%);
-        display: flex;
-        justify-content: center;
-        img {
-            width: 100px;
-        }
-        a {
-            font-size: 1.2em;
-        }
-        button {
-            img {
-                width: 35px;
-            }
-        }
+@media (min-width: $breakpoint-cel) {
+  // Header
+  header {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, 100%);
+    img {
+      width: 125px;
     }
-    h1 {
-        text-align: center;
-        margin-bottom: 50px;
+    a {
+      font-size: 1.2em;
     }
-    #hero {
-        .jumbotron {   
-            background-size: cover;  
-            background-repeat: no-repeat;  
-            background-position: center;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("/static/img/bg2.jpg");
-        }
+    button {
+      img {
+        width: 35px;
+      }
     }
+  }
+  // Hero
+  h1 {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  p {
+    padding: 0;
+    margin: 0;
+  }
+  .jumbotron {
+    padding: 1rem;
+    margin-bottom: 0;
+    border-radius: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("/static/img/bg1.jpg");
+  }
+  // Albums
+  #albums {
+    .card-body {
+      background: rgb(2, 0, 36);
+      background: linear-gradient(
+        0deg,
+        rgba(2, 0, 36, 1) 25%,
+        rgba(19, 0, 33, 1) 47%,
+        rgba(62, 0, 27, 1) 74%,
+        rgba(176, 0, 11, 1) 100%
+      );
+    }
+  }
+  // Members
+  #members {
+    .card-body {
+      background: rgb(2, 0, 36);
+      background: linear-gradient(
+        180deg,
+        rgba(2, 0, 36, 1) 25%,
+        rgba(19, 0, 33, 1) 47%,
+        rgba(62, 0, 27, 1) 74%,
+        rgba(176, 0, 11, 1) 100%
+      );
+    }
+  }
+  // Video
+  // #video {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   iframe {
+  //     max-width: 426px;
+  //     min-width: 320px;
+  //     max-height: 240px;
+  //     min-height: 180px;
+  //   }
+  // }
+  // Contacto
+  // Footer
+  footer {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      180deg,
+      rgba(2, 0, 36, 1) 25%,
+      rgba(19, 0, 33, 1) 47%,
+      rgba(62, 0, 27, 1) 74%,
+      rgba(176, 0, 11, 1) 100%
+    );
+    margin-top: 100px;
+    .container {
+      padding-bottom: 20px;
+    }
+    .socialMedia {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      img {
+        width: 35px;
+      }
+    }
+  }
 }
 
 @media (min-width: $breakpoint-pc) {
-    header {
-        width: 100%;
-        background: rgb(2,0,36);
-        background: linear-gradient(90deg, rgba(2,0,36,.5) 0%, rgba(9,9,121,.6) 35%, 100%);
-        img {
-            width: 250px;
-        }
-        a {
-            font-size: 25px;
-        }
-        button {
-            img {
-                width: 50px;
-            }
-        }
+  // Header
+  header {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0.5) 0%, rgba(9, 9, 121, 0.6) 35%, 100%);
+    .navbar-nav {
+      right: 0;
     }
-    #hero {
-        .jumbotron {   
-            background-size: cover;  
-            background-repeat: no-repeat;  
-            background-position: center;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("/static/img/bg2.jpg");
-        }
-        img {
-            height: auto;
-        }
+    img {
+      width: 250px;
     }
-    #albums {
-        background: rgb(255,46,0);
-        background: linear-gradient(90deg, rgba(255,46,0,1) 0%, rgba(5,0,0,1) 6%, rgba(0,0,0,1) 95%, rgba(245,0,0,1) 100%);
+    a {
+      font-size: 25px;
     }
-}
-
-
-#video, #contacto, body {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, 100%);
-}
-
-.socialMedia {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    width: 100%;
-    a img {
-        width: calc(100%/5);
-        width: 10px;
+    button {
+      img {
+        width: 50px;
+      }
     }
-}
-
-a:hover {
-    text-decoration: underline;
+  }
+  // Video
+  // #video {
+  //   iframe {
+  //     max-width: 1280px;
+  //     max-height: 720px;
+  //   }
+  // }
 }
